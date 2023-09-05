@@ -1,0 +1,32 @@
+// generator client {
+//   provider = "prisma-client-js"
+// }
+
+// datasource db {
+//   provider = "mongodb"
+//   url = env("MONGODB_URI")
+// }
+
+// model Product {
+//   id Int @id @map("_id")
+//   name String @unique
+//   price Int @default(9999)
+//   created_at DateTime @default(now())
+//   category Category @relation(fields: [category_id], references: [id])
+//   category_id Int
+// }
+
+// model Category {
+//   id Int @id @map("_id")
+//   name String @unique
+//   products Product[]
+// }
+
+// model Users {
+//   id Int @id @map("_id")
+//   email String @unique
+//   fname String?
+//   lname String?
+//   skill Json?
+
+// }
